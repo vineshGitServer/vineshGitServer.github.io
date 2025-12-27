@@ -1,0 +1,3 @@
+   cd snake-water-gun-game
+   npm install
+   npm test
