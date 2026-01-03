@@ -172,8 +172,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
     });
-});
-    });
 
     // Add scroll effect to navbar
     let lastScroll = 0;
@@ -236,30 +234,3 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
