@@ -37,10 +37,49 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-container">
-            <!-- Centered Logo -->
+            <!-- Centered Logo with Motion Graphics -->
             <div class="hero-logo-container">
-                <img src="/images/LOGO1.png" alt="Triplepower Logo" class="hero-logo" 
-                     onerror="console.error('Logo failed to load. Trying alternative path...'); this.onerror=null; this.src='images/LOGO1.png';">
+                <!-- Left Motion Graphics -->
+                <div class="motion-graphics motion-graphics-left">
+                    <svg class="wave-svg" viewBox="0 0 200 400" preserveAspectRatio="none">
+                        <defs>
+                            <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.6" />
+                                <stop offset="50%" style="stop-color:#06b6d4;stop-opacity:0.8" />
+                                <stop offset="100%" style="stop-color:#14b8a6;stop-opacity:0.6" />
+                            </linearGradient>
+                        </defs>
+                        <path class="wave-path" d="M0,100 Q50,50 100,100 T200,100" fill="none" stroke="url(#waveGradient)" stroke-width="2"/>
+                        <path class="wave-path" d="M0,150 Q50,120 100,150 T200,150" fill="none" stroke="url(#waveGradient)" stroke-width="2"/>
+                        <path class="wave-path" d="M0,200 Q50,170 100,200 T200,200" fill="none" stroke="url(#waveGradient)" stroke-width="2"/>
+                        <path class="wave-path" d="M0,250 Q50,220 100,250 T200,250" fill="none" stroke="url(#waveGradient)" stroke-width="2"/>
+                        <path class="wave-path" d="M0,300 Q50,270 100,300 T200,300" fill="none" stroke="url(#waveGradient)" stroke-width="2"/>
+                    </svg>
+                </div>
+                
+                <!-- Logo -->
+                <div class="hero-logo-wrapper">
+                    <img src="/images/LOGO1.png" alt="Triplepower Logo" class="hero-logo" 
+                         onerror="console.error('Logo failed to load. Trying alternative path...'); this.onerror=null; this.src='images/LOGO1.png';">
+                </div>
+                
+                <!-- Right Motion Graphics -->
+                <div class="motion-graphics motion-graphics-right">
+                    <svg class="wave-svg" viewBox="0 0 200 400" preserveAspectRatio="none">
+                        <defs>
+                            <linearGradient id="waveGradientRight" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#14b8a6;stop-opacity:0.6" />
+                                <stop offset="50%" style="stop-color:#06b6d4;stop-opacity:0.8" />
+                                <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0.6" />
+                            </linearGradient>
+                        </defs>
+                        <path class="wave-path" d="M0,100 Q50,50 100,100 T200,100" fill="none" stroke="url(#waveGradientRight)" stroke-width="2"/>
+                        <path class="wave-path" d="M0,150 Q50,120 100,150 T200,150" fill="none" stroke="url(#waveGradientRight)" stroke-width="2"/>
+                        <path class="wave-path" d="M0,200 Q50,170 100,200 T200,200" fill="none" stroke="url(#waveGradientRight)" stroke-width="2"/>
+                        <path class="wave-path" d="M0,250 Q50,220 100,250 T200,250" fill="none" stroke="url(#waveGradientRight)" stroke-width="2"/>
+                        <path class="wave-path" d="M0,300 Q50,270 100,300 T200,300" fill="none" stroke="url(#waveGradientRight)" stroke-width="2"/>
+                    </svg>
+                </div>
             </div>
             
             <!-- Content Below Logo -->
