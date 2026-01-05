@@ -173,14 +173,21 @@ body {
     align-items: center;
 }
 
-/* Centered Logo Container */
+/* Centered Logo Container with Motion Graphics */
 .hero-logo-container {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
+    position: relative;
+    gap: 20px;
     animation: fadeInUp 0.8s ease-out;
+}
+
+.hero-logo-wrapper {
+    flex-shrink: 0;
+    z-index: 2;
 }
 
 .hero-logo {
@@ -189,7 +196,131 @@ body {
     height: auto;
     object-fit: contain;
     display: block;
-    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+/* Motion Graphics - Wavy Lines */
+.motion-graphics {
+    position: relative;
+    width: 200px;
+    height: 400px;
+    opacity: 0.7;
+    flex-shrink: 0;
+}
+
+.motion-graphics-left {
+    transform: scaleX(-1);
+}
+
+.motion-graphics-right {
+    transform: scaleX(1);
+}
+
+.wave-svg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.wave-path {
+    animation: waveAnimation 3s ease-in-out infinite;
+    stroke-linecap: round;
+}
+
+.wave-path:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.wave-path:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.wave-path:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.wave-path:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+.wave-path:nth-child(5) {
+    animation-delay: 0.8s;
+}
+
+@keyframes waveAnimation {
+    0% {
+        transform: translateY(0);
+        opacity: 0.6;
+    }
+    25% {
+        transform: translateY(-5px);
+        opacity: 0.8;
+    }
+    50% {
+        transform: translateY(5px);
+        opacity: 1;
+    }
+    75% {
+        transform: translateY(-3px);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 0.6;
+    }
+}
+
+/* Alternative: CSS-based animated waves */
+.motion-graphics::before,
+.motion-graphics::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, rgba(59, 130, 246, 0.6) 0%, rgba(6, 182, 212, 0.8) 50%, rgba(20, 184, 166, 0.6) 100%);
+    border-radius: 2px;
+}
+
+.motion-graphics-left::before {
+    top: 20%;
+    animation: waveMove 4s ease-in-out infinite;
+}
+
+.motion-graphics-left::after {
+    top: 80%;
+    animation: waveMove 4s ease-in-out infinite 0.5s;
+}
+
+.motion-graphics-right::before {
+    top: 20%;
+    animation: waveMove 4s ease-in-out infinite;
+}
+
+.motion-graphics-right::after {
+    top: 80%;
+    animation: waveMove 4s ease-in-out infinite 0.5s;
+}
+
+@keyframes waveMove {
+    0%, 100% {
+        transform: translateX(0) scaleY(1);
+        opacity: 0.6;
+    }
+    25% {
+        transform: translateX(10px) scaleY(1.2);
+        opacity: 0.8;
+    }
+    50% {
+        transform: translateX(0) scaleY(0.8);
+        opacity: 1;
+    }
+    75% {
+        transform: translateX(-10px) scaleY(1.1);
+        opacity: 0.8;
+    }
 }
 
 .hero-content {
@@ -636,6 +767,13 @@ section {
 
     .hero-logo-container {
         margin-bottom: 30px;
+        gap: 10px;
+    }
+
+    .motion-graphics {
+        width: 80px;
+        height: 200px;
+        opacity: 0.5;
     }
 
     .hero-logo {
