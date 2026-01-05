@@ -184,7 +184,7 @@ body {
 }
 
 .hero-logo {
-    max-width: 500px;
+    max-width: 250px;
     width: 100%;
     height: auto;
     object-fit: contain;
@@ -639,7 +639,7 @@ section {
     }
 
     .hero-logo {
-        max-width: 300px;
+        max-width: 150px;
     }
 
     .hero-left,
