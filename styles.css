@@ -210,11 +210,11 @@ body {
 }
 
 .motion-graphics-left {
-    transform: scaleX(-1);
+    transform: scaleX(-7);
 }
 
 .motion-graphics-right {
-    transform: scaleX(1);
+    transform: scaleX(7);
 }
 
 .wave-svg {
