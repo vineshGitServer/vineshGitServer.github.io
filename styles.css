@@ -210,7 +210,7 @@ body {
 }
 
 .motion-graphics-left {
-    transform: scaleX(-7);
+    transform: scaleX(-5);
 }
 
 .motion-graphics-right {
