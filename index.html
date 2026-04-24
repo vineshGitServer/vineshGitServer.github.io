@@ -1,445 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Triplepower - Home</title>
-    <link rel="icon" type="image/png" href="/images/LOGO1.png">
-    <link rel="shortcut icon" type="image/png" href="/images/LOGO1.png">
-    <link rel="apple-touch-icon" href="/images/LOGO1.png">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Triplepower - Home</title>
+  <link rel="icon" type="image/png" href="/images/LOGO1.png">
+  <link rel="shortcut icon" type="image/png" href="/images/LOGO1.png">
+  <link rel="apple-touch-icon" href="/images/LOGO1.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="/">Triplepower</a>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-                <li><a href="#blogs">Blogs</a></li>
-                <li><a href="#testimonial">Testimonial</a></li>
-                <li><a href="#testimonial">Services</a></li>
-            </ul>
-            <a href="#contact" class="btn-get-quote">Get Quote</a>
-            <button class="nav-toggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </nav>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="#home">Triplepower</a>
+      </div>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <!-- Centered Logo with Motion Graphics -->
-            <div class="hero-logo-container">
-                <!-- Left Motion Graphics -->
-                <div class="motion-graphics motion-graphics-left">
-                    <svg class="wave-svg" viewBox="0 0 200 400" preserveAspectRatio="none">
-                        <defs>
-                            <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                                <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.6" />
-                                <stop offset="50%" style="stop-color:#06b6d4;stop-opacity:0.8" />
-                                <stop offset="100%" style="stop-color:#14b8a6;stop-opacity:0.6" />
-                            </linearGradient>
-                        </defs>
-                        <path class="wave-path" d="M0,100 Q50,50 100,100 T200,100" fill="none" stroke="url(#waveGradient)" stroke-width="5"/>
-                        <path class="wave-path" d="M0,150 Q50,120 100,150 T200,150" fill="none" stroke="url(#waveGradient)" stroke-width="2"/>
-                        <path class="wave-path" d="M0,200 Q50,170 100,200 T200,200" fill="none" stroke="url(#waveGradient)" stroke-width="5"/>
-                        <path class="wave-path" d="M0,250 Q50,220 100,250 T200,250" fill="none" stroke="url(#waveGradient)" stroke-width="2"/>
-                        <path class="wave-path" d="M0,300 Q50,270 100,300 T200,300" fill="none" stroke="url(#waveGradient)" stroke-width="5"/>
-                    </svg>
-                </div>
-              
-                <!-- Logo -->
-                <div class="hero-logo-wrapper">
-                    <img src="/images/LOGO1.png" alt="Triplepower Logo" class="hero-logo"
-                         onerror="console.error('Logo failed to load. Trying alternative path...'); this.onerror=null; this.src='images/LOGO1.png';">
-                </div>
-              
-                <!-- Right Motion Graphics -->
-                <div class="motion-graphics motion-graphics-right">
-                    <svg class="wave-svg" viewBox="0 0 200 400" preserveAspectRatio="none">
-                        <defs>
-                            <linearGradient id="waveGradientRight" x1="0%" y1="0%" x2="100%" y2="0%">
-                                <stop offset="0%" style="stop-color:#14b8a6;stop-opacity:0.6" />
-                                <stop offset="50%" style="stop-color:#06b6d4;stop-opacity:0.8" />
-                                <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0.6" />
-                            </linearGradient>
-                        </defs>
-                        <path class="wave-path" d="M0,100 Q50,50 100,100 T200,100" fill="none" stroke="url(#waveGradientRight)" stroke-width="5"/>
-                        <path class="wave-path" d="M0,150 Q50,120 100,150 T200,150" fill="none" stroke="url(#waveGradientRight)" stroke-width="2"/>
-                        <path class="wave-path" d="M0,200 Q50,170 100,200 T200,200" fill="none" stroke="url(#waveGradientRight)" stroke-width="5"/>
-                        <path class="wave-path" d="M0,250 Q50,220 100,250 T200,250" fill="none" stroke="url(#waveGradientRight)" stroke-width="2"/>
-                        <path class="wave-path" d="M0,300 Q50,270 100,300 T200,300" fill="none" stroke="url(#waveGradientRight)" stroke-width="5"/>
-                    </svg>
-                </div>
-            </div>
-          
-            <!-- Content Below Logo -->
-            <div class="hero-content">
-                <div class="hero-left">
-                    <p class="hero-target">
-                        <strong>Technical discomfort?</strong> - stay cool, the real world Troubleshooting tool does everything within a click <strong>and Runs</strong> in the <strong>background o</strong>f your system.
-                    </p>
-                </div>
-                <div class="hero-right">
-                    <h2 class="hero-heading">what are we building</h2>
-                    <p class="hero-description">
-                        your Technology partner with Operating system support as a service.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
 
-    <!-- AI Section -->
-    <section class="ai-section">
-        <div class="container">
-            <div class="ai-content">
-                <p class="ai-text">
-                    With <strong>conversational AI</strong>, simplifies prep, sharpens skills, and delivers feedback that actually helps you grow.
-                </p>
-            </div>
-        </div>
-    </section>
+      <a href="#contact" class="btn-get-quote">Book a Call</a>
 
-    <!-- VEDA Section -->
-    <section class="veda-section">
-        <div class="container">
-            <h2 class="veda-heading">book a strategy call</h2>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        I'm a passionate developer who loves building innovative solutions and creating
-                        engaging user experiences. With a focus on clean code and modern design, I strive
-                        to bring ideas to life through technology.
-                    </p>
-                    <p>
-                        When I'm not coding, you can find me exploring new technologies, contributing to
-                        open-source projects, or sharing knowledge with the developer community.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Working Branches</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="placeholder-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
-                    </div>
-                    <div class="project-content">
-                        <h3>AI & Automations</h3>
-                        <p>workflow automation, AI integration and Agents for you Business and Social media</p>
-                        <div class="project-tags">
-                            <span class="tag">Integration</span>
-                            <span class="tag">Workflow Automation</span>
-                            <span class="tag">Agents</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">View more</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="placeholder-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Content Factory</h3>
-                        <p>Project description goes here. This is a brief overview of what the project does and the technologies used.</p>
-                        <div class="project-tags">
-                            <span class="tag">Vue.js</span>
-                            <span class="tag">Firebase</span>
-                            <span class="tag">CSS</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">View more</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="placeholder-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
-                    </div>
-                    <div class="project-content">
-                        <h3>micro SaaS</h3>
-                        <p>Chatbots, Customer support agents and customised software for your business.</p>
-                        <div class="project-tags">
-                            <span class="tag">Next.js</span>
-                            <span class="tag">TypeScript</span>
-                            <span class="tag">Tailwind</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">View more</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Frontend</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">HTML</span>
-                        <span class="skill-item">CSS</span>
-                        <span class="skill-item">JavaScript</span>
-                        <span class="skill-item">React</span>
-                        <span class="skill-item">Vue.js</span>
-                        <span class="skill-item">Next.js</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Backend</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">Node.js</span>
-                        <span class="skill-item">Python</span>
-                        <span class="skill-item">Express</span>
-                        <span class="skill-item">MongoDB</span>
-                        <span class="skill-item">PostgreSQL</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Tools & Others</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">Git</span>
-                        <span class="skill-item">Docker</span>
-                        <span class="skill-item">AWS</span>
-                        <span class="skill-item">Figma</span>
-                        <span class="skill-item">Linux</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section - SheetMonkey Integrated -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="contact-subtitle">
-                I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
-            </p>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <h3>Email</h3>
-                        <a href="mailto:greenbodys.work@gmail.com">greenbodys.work@gmail.com</a>
-                    </div>
-                    <div class="contact-item">
-                        <h3>Social</h3>
-                        <div class="social-links">
-                            <a href="#" class="social-link">GitHub</a>
-                            <a href="#" class="social-link">LinkedIn</a>
-                            <a href="#" class="social-link">Twitter</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- SheetMonkey Integrated Form -->
-                <form class="contact-form" id="sheetmonkey-form">
-                    <div class="form-group">
-                        <input 
-                            type="text" 
-                            id="name" 
-                            name="Name" 
-                            placeholder="Your Name" 
-                            required
-                        >
-                    </div>
-                    <div class="form-group">
-                        <input 
-                            type="email" 
-                            id="email" 
-                            name="Email" 
-                            placeholder="Your Email" 
-                            required
-                        >
-                    </div>
-                    <div class="form-group">
-                        <textarea 
-                            id="message" 
-                            name="Message" 
-                            placeholder="Your Message" 
-                            rows="5" 
-                            required
-                        ></textarea>
-                    </div>
-                    <button type="submit" class="btn-primary" id="submit-btn">
-                        Send Message
-                    </button>
-                    
-                    <!-- Success/Error Messages -->
-                    <div id="form-message" class="form-message" style="display: none;"></div>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Vinesh. All rights reserved.</p>
-            <p class="footer-note">Built with passion and attention to detail</p>
-        </div>
-    </footer>
-
-    <!-- Chatbot Widget -->
-    <div class="chatbot-container" id="chatbotContainer">
-        <div class="chatbot-header">
-            <div class="chatbot-header-content">
-                <h3>Chat with us</h3>
-                <p>We're here to help!</p>
-            </div>
-            <button class="chatbot-close" id="chatbotClose" aria-label="Close chatbot">
-                <span>&times;</span>
-            </button>
-        </div>
-        <div class="chatbot-messages" id="chatbotMessages">
-            <div class="chatbot-message bot-message">
-                <div class="message-content">
-                    <p>Hello!  How can I help you today?</p>
-                </div>
-            </div>
-        </div>
-        <div class="chatbot-input-container">
-            <input type="text" id="chatbotInput" placeholder="Type your message..." autocomplete="off">
-            <button id="chatbotSend" aria-label="Send message">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <line x1="22" y1="2" x2="11" y2="13"></line>
-                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                </svg>
-            </button>
-        </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
+  </nav>
 
-    <!-- Chatbot Toggle Button -->
-    <button class="chatbot-toggle" id="chatbotToggle" aria-label="Open chatbot">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-        </svg>
-        <span class="chatbot-badge" id="chatbotBadge" style="display: none;">1</span>
-    </button>
+  <section id="home" class="hero">
+    <div class="hero-bg-glow"></div>
+    <div class="hero-container">
+      <div class="hero-logo-wrapper">
+        <img src="/images/LOGO1.png" alt="Triplepower Logo" class="hero-logo" onerror="this.onerror=null;this.src='images/LOGO1.png';">
+      </div>
 
-    <script src="script.js"></script>
-    
-    <!-- SheetMonkey Integration Script -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const form = document.getElementById('sheetmonkey-form');
-            const submitBtn = document.getElementById('submit-btn');
-            const messageDiv = document.getElementById('form-message');
+      <div class="hero-content">
+        <div class="hero-left">
+          <p class="hero-target">
+            <strong>Technical issues slowing down your work?</strong><br>
+            Triplepower helps businesses stay efficient with practical troubleshooting, smart support systems, and lightweight automation that removes friction from day-to-day operations.
+          </p>
+        </div>
 
-            form.addEventListener('submit', async function(e) {
-                e.preventDefault();
-                
-                // Show loading state
-                submitBtn.textContent = 'Sending...';
-                submitBtn.disabled = true;
-                messageDiv.style.display = 'none';
+        <div class="hero-right">
+          <h1 class="hero-heading">Technology support built for modern businesses</h1>
+          <p class="hero-description">
+            We help teams solve system problems, improve workflows, and build simple digital tools that save time without adding complexity.
+          </p>
 
-                try {
-                    const formData = new FormData(form);
-                    const response = await fetch('https://api.sheetmonkey.io/form/eHwpqcR5jpXvgXvWu2VxfX', {
-                        method: 'POST',
-                        body: formData,
-                        mode: 'no-cors' // SheetMonkey requires no-cors
-                    });
+          <div class="hero-buttons">
+            <a href="#contact" class="btn-primary">Get Started</a>
+            <a href="#projects" class="btn-secondary">Explore Services</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-                    // Show success message (no-cors prevents reading response)
-                    showMessage('Thank you! Your message has been sent successfully. I\'ll get back to you soon!', 'success');
-                    form.reset();
-                    
-                } catch (error) {
-                    console.error('Form submission error:', error);
-                    showMessage('Oops! Something went wrong. Please try again or email me directly.', 'error');
-                } finally {
-                    // Reset button
-                    submitBtn.textContent = 'Send Message';
-                    submitBtn.disabled = false;
-                }
+  <section class="ai-section">
+    <div class="container">
+      <div class="ai-content">
+        <p class="ai-text">
+          With <strong>AI and automation</strong>, we simplify preparation, improve workflows, and create support experiences that help businesses move faster.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="veda-section">
+    <div class="container">
+      <h2 class="veda-heading">Book a strategy call</h2>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">About Triplepower</h2>
+      <div class="about-content glass-card">
+        <div class="about-text">
+          <p>
+            Triplepower focuses on practical technology support, workflow automation, and business-ready systems designed to solve real operational problems.
+          </p>
+          <p>
+            From troubleshooting and process optimization to AI-assisted support experiences, the goal is simple: make technology feel lighter, faster, and more useful for your team.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">Working Branches</h2>
+      <div class="projects-grid">
+        <article class="project-card glass-card">
+          <div class="project-image">
+            <div class="placeholder-image gradient-one"></div>
+          </div>
+          <div class="project-content">
+            <h3>AI & Automations</h3>
+            <p>Workflow automation, AI integrations, and business-ready agents for internal operations and customer communication.</p>
+            <div class="project-tags">
+              <span class="tag">Integration</span>
+              <span class="tag">Workflow</span>
+              <span class="tag">Agents</span>
+            </div>
+            <div class="project-links">
+              <a href="#contact" class="project-link">View more</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card glass-card">
+          <div class="project-image">
+            <div class="placeholder-image gradient-two"></div>
+          </div>
+          <div class="project-content">
+            <h3>Content Factory</h3>
+            <p>Content systems built for consistent production, marketing execution, and scalable digital publishing workflows.</p>
+            <div class="project-tags">
+              <span class="tag">Content Ops</span>
+              <span class="tag">Creative</span>
+              <span class="tag">Growth</span>
+            </div>
+            <div class="project-links">
+              <a href="#contact" class="project-link">View more</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card glass-card">
+          <div class="project-image">
+            <div class="placeholder-image gradient-three"></div>
+          </div>
+          <div class="project-content">
+            <h3>Micro SaaS</h3>
+            <p>Custom support tools, chatbot systems, and lightweight software tailored to the way your business actually works.</p>
+            <div class="project-tags">
+              <span class="tag">Custom Tools</span>
+              <span class="tag">Support</span>
+              <span class="tag">SaaS</span>
+            </div>
+            <div class="project-links">
+              <a href="#contact" class="project-link">View more</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2 class="section-title">Capabilities</h2>
+      <div class="skills-grid">
+        <div class="skill-category glass-card">
+          <h3>Frontend</h3>
+          <div class="skill-items">
+            <span class="skill-item">HTML</span>
+            <span class="skill-item">CSS</span>
+            <span class="skill-item">JavaScript</span>
+            <span class="skill-item">React</span>
+            <span class="skill-item">Vue.js</span>
+            <span class="skill-item">Next.js</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card">
+          <h3>Backend</h3>
+          <div class="skill-items">
+            <span class="skill-item">Node.js</span>
+            <span class="skill-item">Python</span>
+            <span class="skill-item">Express</span>
+            <span class="skill-item">MongoDB</span>
+            <span class="skill-item">PostgreSQL</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card">
+          <h3>Tools & Systems</h3>
+          <div class="skill-items">
+            <span class="skill-item">Git</span>
+            <span class="skill-item">Docker</span>
+            <span class="skill-item">AWS</span>
+            <span class="skill-item">Linux</span>
+            <span class="skill-item">Automation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="contact-subtitle">
+        Have a project, idea, or technical problem to solve? Send a message and let’s discuss the right approach.
+      </p>
+
+      <div class="contact-content">
+        <div class="contact-info glass-card">
+          <div class="contact-item">
+            <h3>Email</h3>
+            <a href="mailto:greenbodys.work@gmail.com">greenbodys.work@gmail.com</a>
+          </div>
+
+          <div class="contact-item">
+            <h3>What we can help with</h3>
+            <p>Automation systems, technology support, workflow design, lightweight tools, and AI-assisted solutions for business operations.</p>
+          </div>
+
+          <div class="contact-item">
+            <h3>Social</h3>
+            <div class="social-links">
+              <a href="https://github.com/vineshgitserver" target="_blank" rel="noopener noreferrer" class="social-link">GitHub</a>
+              <a href="#" class="social-link">LinkedIn</a>
+              <a href="#" class="social-link">Twitter</a>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form glass-card" id="sheetmonkey-form">
+          <div class="form-group">
+            <input type="text" id="name" name="Name" placeholder="Your Name" required>
+          </div>
+
+          <div class="form-group">
+            <input type="email" id="email" name="Email" placeholder="Your Email" required>
+          </div>
+
+          <div class="form-group">
+            <textarea id="message" name="Message" placeholder="Tell me about your project or requirement" rows="6" required></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary form-submit" id="submit-btn">Send Message</button>
+          <div id="form-message" class="form-message" style="display:none;"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Vinesh. All rights reserved.</p>
+      <p class="footer-note">Built with clarity, systems thinking, and attention to detail.</p>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    if (navToggle && navMenu) {
+      navToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+        navToggle.setAttribute('aria-expanded', navMenu.classList.contains('active'));
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const form = document.getElementById('sheetmonkey-form');
+      const submitBtn = document.getElementById('submit-btn');
+      const messageDiv = document.getElementById('form-message');
+
+      if (form) {
+        form.addEventListener('submit', async function (e) {
+          e.preventDefault();
+          submitBtn.textContent = 'Sending...';
+          submitBtn.disabled = true;
+          messageDiv.style.display = 'none';
+
+          try {
+            const formData = new FormData(form);
+            await fetch('https://api.sheetmonkey.io/form/eHwpqcR5jpXvgXvWu2VxfX', {
+              method: 'POST',
+              body: formData,
+              mode: 'no-cors'
             });
 
-            function showMessage(text, type) {
-                messageDiv.textContent = text;
-                messageDiv.className = `form-message ${type}`;
-                messageDiv.style.display = 'block';
-                
-                // Auto-hide success message after 5 seconds
-                if (type === 'success') {
-                    setTimeout(() => {
-                        messageDiv.style.display = 'none';
-                    }, 5000);
-                }
-            }
+            messageDiv.textContent = 'Thanks! Your message has been sent successfully.';
+            messageDiv.className = 'form-message success';
+            messageDiv.style.display = 'block';
+            form.reset();
+          } catch (error) {
+            messageDiv.textContent = 'Something went wrong. Please try again or contact us directly by email.';
+            messageDiv.className = 'form-message error';
+            messageDiv.style.display = 'block';
+          } finally {
+            submitBtn.textContent = 'Send Message';
+            submitBtn.disabled = false;
+          }
         });
-    </script>
-
-    <!-- CSS for form messages -->
-    <style>
-        .form-message {
-            margin-top: 1rem;
-            padding: 12px 16px;
-            border-radius: 8px;
-            font-weight: 500;
-            text-align: center;
-        }
-        .form-message.success {
-            background-color: #dcfce7;
-            color: #166534;
-            border: 1px solid #bbf7d0;
-        }
-        .form-message.error {
-            background-color: #fef2f2;
-            color: #dc2626;
-            border: 1px solid #fecaca;
-        }
-        
-        /* Ensure form fields have proper names for SheetMonkey */
-        .contact-form input[name="Name"],
-        .contact-form input[name="Email"],
-        .contact-form textarea[name="Message"] {
-            width: 100%;
-            padding: 12px 16px;
-            border: 2px solid #e5e7eb;
-            border-radius: 8px;
-            font-size: 16px;
-            transition: border-color 0.2s, box-shadow 0.2s;
-            box-sizing: border-box;
-        }
-        
-        .contact-form input[name="Name"]:focus,
-        .contact-form input[name="Email"]:focus,
-        .contact-form textarea[name="Message"]:focus {
-            outline: none;
-            border-color: #3b82f6;
-            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
-        }
-    </style>
+      }
+    });
+  </script>
 </body>
 </html>
