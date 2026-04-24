@@ -284,6 +284,7 @@
             const form = document.getElementById('sheetmonkey-form');
             const submitBtn = document.getElementById('submit-btn');
             const messageDiv = document.getElementById('form-message');
+            if (!form || !submitBtn || !messageDiv) return;
 
             form.addEventListener('submit', async function(e) {
                 e.preventDefault();
@@ -299,7 +300,7 @@
                         mode: 'no-cors'
                     });
 
-                    showMessage('Thank you! Your message has been sent successfully. I\\'ll get back to you soon!', 'success');
+                    showMessage("Thank you! Your message has been sent successfully. I'll get back to you soon!", 'success');
                     form.reset();
                 } catch (error) {
                     console.error('Form submission error:', error);
