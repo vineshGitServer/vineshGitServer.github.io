@@ -4,326 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Triplepower - Home</title>
-    <link rel="icon" type="image/png" href="/images/LOGO1.png">
-    <link rel="shortcut icon" type="image/png" href="/images/LOGO1.png">
-    <link rel="apple-touch-icon" href="/images/LOGO1.png">
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="/">Triplepower</a>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-                <li><a href="#blogs">Blogs</a></li>
-                <li><a href="#testimonial">Testimonial</a></li>
-                <li><a href="#testimonial">Services</a></li>
-            </ul>
-            <a href="#contact" class="btn-get-quote">Get Quote</a>
-            <button class="nav-toggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <!-- Centered Logo with Motion Graphics -->
-            <div class="hero-logo-container">
-                <!-- Left Motion Graphics -->
-                <div class="motion-graphics motion-graphics-left">
-                    <svg class="wave-svg" viewBox="0 0 200 400" preserveAspectRatio="none">
-                        <defs>
-                            <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                                <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.6" />
-                                <stop offset="50%" style="stop-color:#06b6d4;stop-opacity:0.8" />
-                                <stop offset="100%" style="stop-color:#14b8a6;stop-opacity:0.6" />
-                            </linearGradient>
-                        </defs>
-                        <path class="wave-path" d="M0,100 Q50,50 100,100 T200,100" fill="none" stroke="url(#waveGradient)" stroke-width="5"/>
-                        <path class="wave-path" d="M0,150 Q50,120 100,150 T200,150" fill="none" stroke="url(#waveGradient)" stroke-width="2"/>
-                        <path class="wave-path" d="M0,200 Q50,170 100,200 T200,200" fill="none" stroke="url(#waveGradient)" stroke-width="5"/>
-                        <path class="wave-path" d="M0,250 Q50,220 100,250 T200,250" fill="none" stroke="url(#waveGradient)" stroke-width="2"/>
-                        <path class="wave-path" d="M0,300 Q50,270 100,300 T200,300" fill="none" stroke="url(#waveGradient)" stroke-width="5"/>
-                    </svg>
-                </div>
-                
-                <!-- Logo -->
-                <div class="hero-logo-wrapper">
-                    <img src="/images/LOGO1.png" alt="Triplepower Logo" class="hero-logo" 
-                         onerror="console.error('Logo failed to load. Trying alternative path...'); this.onerror=null; this.src='images/LOGO1.png';">
-                </div>
-                
-                <!-- Right Motion Graphics -->
-                <div class="motion-graphics motion-graphics-right">
-                    <svg class="wave-svg" viewBox="0 0 200 400" preserveAspectRatio="none">
-                        <defs>
-                            <linearGradient id="waveGradientRight" x1="0%" y1="0%" x2="100%" y2="0%">
-                                <stop offset="0%" style="stop-color:#14b8a6;stop-opacity:0.6" />
-                                <stop offset="50%" style="stop-color:#06b6d4;stop-opacity:0.8" />
-                                <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0.6" />
-                            </linearGradient>
-                        </defs>
-                        <path class="wave-path" d="M0,100 Q50,50 100,100 T200,100" fill="none" stroke="url(#waveGradientRight)" stroke-width="5"/>
-                        <path class="wave-path" d="M0,150 Q50,120 100,150 T200,150" fill="none" stroke="url(#waveGradientRight)" stroke-width="2"/>
-                        <path class="wave-path" d="M0,200 Q50,170 100,200 T200,200" fill="none" stroke="url(#waveGradientRight)" stroke-width="5"/>
-                        <path class="wave-path" d="M0,250 Q50,220 100,250 T200,250" fill="none" stroke="url(#waveGradientRight)" stroke-width="2"/>
-                        <path class="wave-path" d="M0,300 Q50,270 100,300 T200,300" fill="none" stroke="url(#waveGradientRight)" stroke-width="5"/>
-                    </svg>
-                </div>
-            </div>
-            
-            <!-- Content Below Logo -->
-            <div class="hero-content">
-                <div class="hero-left">
-                    <p class="hero-target">
-                        <strong>Technical discomfort?</strong> - stay cool, the real world Troubleshooting tool does everything within a click <strong>and Runs</strong> in the <strong>background of your system</strong>.
-                    </p>
-                </div>
-                <div class="hero-right">
-                    <h2 class="hero-heading">what are we building</h2>
-                    <p class="hero-description">
-                        your Technology partner with Operating system support as a service.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- NAV -->
+<nav>
+    <h1>Triplepower</h1>
+    <a href="#contact">Contact</a>
+</nav>
 
-    <!-- AI Section -->
-    <section class="ai-section">
-        <div class="container">
-            <div class="ai-content">
-                <p class="ai-text">
-                    With <strong>conversational AI</strong>, simplifies prep, sharpens skills, and delivers feedback that actually helps you grow.
-                </p>
-            </div>
-        </div>
-    </section>
+<!-- HERO -->
+<section id="home">
+    <h2>Welcome to Triplepower</h2>
+    <p>Your technology partner.</p>
+</section>
 
-    <!-- VEDA Section -->
-    <section class="veda-section">
-        <div class="container">
-            <h2 class="veda-heading">book a strategy call</h2>
-        </div>
-    </section>
+<!-- CONTACT SECTION (FIXED + WORKING) -->
+<section id="contact">
+    <h2>Get In Touch</h2>
+    <p>Contact us using the form below</p>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        I'm a passionate developer who loves building innovative solutions and creating 
-                        engaging user experiences. With a focus on clean code and modern design, I strive 
-                        to bring ideas to life through technology.
-                    </p>
-                    <p>
-                        When I'm not coding, you can find me exploring new technologies, contributing to 
-                        open-source projects, or sharing knowledge with the developer community.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div style="display:flex; gap:30px; flex-wrap:wrap;">
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Working Branches</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="placeholder-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
-                    </div>
-                    <div class="project-content">
-                        <h3>AI & Automations</h3>
-                        <p>workflow automation, AI integration and Agents for you Business and Social media</p>
-                        <div class="project-tags">
-                            <span class="tag">Integration</span>
-                            <span class="tag">Workflow Automation</span>
-                            <span class="tag">Agents</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">View more</a>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="placeholder-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Content Factory</h3>
-                        <p>Project description goes here. This is a brief overview of what the project does and the technologies used.</p>
-                        <div class="project-tags">
-                            <span class="tag">Vue.js</span>
-                            <span class="tag">Firebase</span>
-                            <span class="tag">CSS</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">View more</a>
-                          
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="placeholder-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
-                    </div>
-                    <div class="project-content">
-                        <h3>micro SaaS</h3>
-                        <p>Chatbots, Customer support agents and customised software for your business.</p>
-                        <div class="project-tags">
-                            <span class="tag">Next.js</span>
-                            <span class="tag">TypeScript</span>
-                            <span class="tag">Tailwind</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">View more</a>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <!-- LEFT SIDE -->
+        <div>
+            <h3>Email</h3>
+            <a href="mailto:greenbodys.work@gmail.com">
+                greenbodys.work@gmail.com
+            </a>
         </div>
-    </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Frontend</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">HTML</span>
-                        <span class="skill-item">CSS</span>
-                        <span class="skill-item">JavaScript</span>
-                        <span class="skill-item">React</span>
-                        <span class="skill-item">Vue.js</span>
-                        <span class="skill-item">Next.js</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Backend</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">Node.js</span>
-                        <span class="skill-item">Python</span>
-                        <span class="skill-item">Express</span>
-                        <span class="skill-item">MongoDB</span>
-                        <span class="skill-item">PostgreSQL</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Tools & Others</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">Git</span>
-                        <span class="skill-item">Docker</span>
-                        <span class="skill-item">AWS</span>
-                        <span class="skill-item">Figma</span>
-                        <span class="skill-item">Linux</span>
-                    </div>
-                </div>
-            </div>
+        <!-- RIGHT SIDE (GOOGLE FORM EMBED) -->
+        <div style="flex:1; min-width:300px;">
+            <iframe 
+                src="https://docs.google.com/forms/d/e/1FAIpQLSfm8wPe_CTYngQZKn-SufXaVOsX7yYzYAnRj0QUw-FUjqWurA/viewform?embedded=true"
+                width="100%" 
+                height="700" 
+                frameborder="0"
+                style="border-radius:10px;">
+                Loading…
+            </iframe>
         </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="contact-subtitle">
-                I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
-            </p>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <h3>Email</h3>
-                        <a href="mailto:your.email@example.com">greenbodys.work@gmail.com</a>
-                    </div>
-                    <div class="contact-item">
-                        <h3>Social</h3>
-                        <div class="social-links">
-                            <a href="#" class="social-link">GitHub</a>
-                            <a href="#" class="social-link">LinkedIn</a>
-                            <a href="#" class="social-link">Twitter</a>
-                        </div>
-                    </div>
-                </div>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="Your Message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn-primary">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Vinesh. All rights reserved.</p>
-            <p class="footer-note">Built with passion and attention to detail</p>
-        </div>
-    </footer>
-
-    <!-- Chatbot Widget -->
-    <div class="chatbot-container" id="chatbotContainer">
-        <div class="chatbot-header">
-            <div class="chatbot-header-content">
-                <h3>Chat with us</h3>
-                <p>We're here to help!</p>
-            </div>
-            <button class="chatbot-close" id="chatbotClose" aria-label="Close chatbot">
-                <span>&times;</span>
-            </button>
-        </div>
-        <div class="chatbot-messages" id="chatbotMessages">
-            <div class="chatbot-message bot-message">
-                <div class="message-content">
-                    <p>Hello! 👋 How can I help you today?</p>
-                </div>
-            </div>
-        </div>
-        <div class="chatbot-input-container">
-            <input type="text" id="chatbotInput" placeholder="Type your message..." autocomplete="off">
-            <button id="chatbotSend" aria-label="Send message">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <line x1="22" y1="2" x2="11" y2="13"></line>
-                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                </svg>
-            </button>
-        </div>
     </div>
+</section>
 
-    <!-- Chatbot Toggle Button -->
-    <button class="chatbot-toggle" id="chatbotToggle" aria-label="Open chatbot">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-        </svg>
-        <span class="chatbot-badge" id="chatbotBadge" style="display: none;">1</span>
-    </button>
+<!-- FOOTER -->
+<footer>
+    <p>© 2025 Triplepower</p>
+</footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
