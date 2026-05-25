@@ -919,7 +919,7 @@ section { padding: 88px 0; }
 @media (max-width: 480px) {
     .container { padding: 0 16px; }
     .nav-container { padding: 10px 16px; }
-    .btn-get-quote { padding: 9px 16px; font-size: 13px; }
+    .btn-get-quote {display:none; padding: 9px 16px; font-size: 13px; }
     .nav-logo-img { height: 34px; }
     .projects-grid { grid-template-columns: 1fr; }
     .skills-grid { grid-template-columns: 1fr; }
