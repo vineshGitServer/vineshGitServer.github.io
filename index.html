@@ -4,94 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Triplepower - Home</title>
-    <link rel="icon" type="image/png" href="/images/LOGO1.png">
-    <link rel="shortcut icon" type="image/png" href="/images/LOGO1.png">
-    <link rel="apple-touch-icon" href="/images/LOGO1.png">
+    <meta name="description" content="Triple Power - Your Technology partner with Operating system support as a service. AI, Automation, and Micro SaaS solutions.">
+    <link rel="icon" type="image/png" href="images/LOGO1.png">
+    <link rel="shortcut icon" type="image/png" href="images/LOGO1.png">
+    <link rel="apple-touch-icon" href="images/LOGO1.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="/images/LOGO1.png" as="image">
+    <link rel="preload" href="images/LOGO1.png" as="image">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- ===================== NAVBAR ===================== -->
     <nav class="navbar">
         <div class="nav-container">
+            <!-- Logo Image -->
             <div class="nav-logo">
-                <a href="/">Triplepower</a>
+                <a href="#home" class="nav-logo-link">
+                    <img src="images/resizeLogo.png" alt="Triple Power Logo" class="nav-logo-img"
+                         onerror="this.onerror=null; this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <span class="nav-logo-fallback" >Triplepower</span>
+                </a>
             </div>
-            <ul class="nav-menu">
+
+            <!-- Desktop Nav Links -->
+            <ul class="nav-menu" id="nav-menu">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#contact">Contact Us</a></li>
                 <li><a href="#blogs">Blogs</a></li>
                 <li><a href="#testimonial">Testimonial</a></li>
-                <li><a href="#testimonial">Services</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#projects">Services</a></li>
             </ul>
-            <a href="#contact" class="btn-get-quote">Get Quote</a>
-            <button class="nav-toggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+
+            <!-- Right side: Get Quote + Mobile Toggle -->
+            <div class="nav-right">
+                <a href="#contact" class="btn-get-quote" id="get-quote-btn">Get Quote</a>
+
+                <!-- Mobile Menu Button (hamburger dropdown) -->
+                <div class="nav-dropdown-wrapper">
+                    <button class="nav-mobile-btn" id="navDropdownBtn" aria-label="Open menu" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div class="nav-dropdown" id="navDropdown">
+                        <a href="#home" class="nav-dropdown-item">🏠 Home</a>
+                        <a href="#about" class="nav-dropdown-item">👤 About</a>
+                        <a href="#contact" class="nav-dropdown-item">📬 Contact Us</a>
+                        <a href="#blogs" class="nav-dropdown-item">📝 Blogs</a>
+                        <a href="#projects" class="nav-dropdown-item">⚡ Services</a>
+                        <a href="#testimonial" class="nav-dropdown-item">💬 Testimonial</a>
+                        <div class="nav-dropdown-divider"></div>
+                        <a href="#contact" class="nav-dropdown-item nav-dropdown-cta">🚀 Get a Free Quote</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </nav>
 
+    <!-- ===================== HERO SECTION ===================== -->
     <section id="home" class="hero">
+        <div class="hero-bg-blobs">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+        </div>
         <div class="hero-container">
-            <div class="hero-logo-container static-hero-graphic">
-                <div class="motion-graphic-static motion-graphic-left" aria-hidden="true">
-                    <svg viewBox="0 0 220 360" class="static-wave-svg" xmlns="http://www.w3.org/2000/svg">
-                        <defs>
-                            <linearGradient id="staticWaveLeft" x1="0%" y1="0%" x2="100%" y2="0%">
-                                <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.28" />
-                                <stop offset="50%" stop-color="#06b6d4" stop-opacity="0.9" />
-                                <stop offset="100%" stop-color="#14b8a6" stop-opacity="0.28" />
-                            </linearGradient>
-                        </defs>
-                        <path d="M0 80 C40 40, 90 40, 140 80 S220 120, 220 80" fill="none" stroke="url(#staticWaveLeft)" stroke-width="5" stroke-linecap="round" />
-                        <path d="M0 145 C40 115, 90 115, 140 145 S220 175, 220 145" fill="none" stroke="url(#staticWaveLeft)" stroke-width="3" stroke-linecap="round" opacity="0.9" />
-                        <path d="M0 210 C40 175, 90 175, 140 210 S220 245, 220 210" fill="none" stroke="url(#staticWaveLeft)" stroke-width="5" stroke-linecap="round" />
-                        <path d="M0 275 C40 245, 90 245, 140 275 S220 305, 220 275" fill="none" stroke="url(#staticWaveLeft)" stroke-width="3" stroke-linecap="round" opacity="0.9" />
-                    </svg>
-                </div>
-
-                <div class="hero-logo-wrapper">
-                    <img src="/images/LOGO1.png" alt="Triplepower Logo" class="hero-logo" fetchpriority="high"
-                         onerror="this.onerror=null; this.src='images/LOGO1.png';">
-                </div>
-
-                <div class="motion-graphic-static motion-graphic-right" aria-hidden="true">
-                    <svg viewBox="0 0 220 360" class="static-wave-svg" xmlns="http://www.w3.org/2000/svg">
-                        <defs>
-                            <linearGradient id="staticWaveRight" x1="0%" y1="0%" x2="100%" y2="0%">
-                                <stop offset="0%" stop-color="#14b8a6" stop-opacity="0.28" />
-                                <stop offset="50%" stop-color="#06b6d4" stop-opacity="0.9" />
-                                <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.28" />
-                            </linearGradient>
-                        </defs>
-                        <path d="M0 80 C40 40, 90 40, 140 80 S220 120, 220 80" fill="none" stroke="url(#staticWaveRight)" stroke-width="5" stroke-linecap="round" />
-                        <path d="M0 145 C40 115, 90 115, 140 145 S220 175, 220 145" fill="none" stroke="url(#staticWaveRight)" stroke-width="3" stroke-linecap="round" opacity="0.9" />
-                        <path d="M0 210 C40 175, 90 175, 140 210 S220 245, 220 210" fill="none" stroke="url(#staticWaveRight)" stroke-width="5" stroke-linecap="round" />
-                        <path d="M0 275 C40 245, 90 245, 140 275 S220 305, 220 275" fill="none" stroke="url(#staticWaveRight)" stroke-width="3" stroke-linecap="round" opacity="0.9" />
-                    </svg>
-                </div>
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Your Technology Partner
             </div>
 
+            <h1 class="hero-title">
+                We Build <span class="hero-gradient-text">Smart Systems</span><br>
+                That Work for You
+            </h1>
+
+            <p class="hero-subtitle">
+                From AI & Automations to Micro SaaS — we eliminate technical friction, 
+                run everything in the background, and let you focus on what matters.
+            </p>
+
+            <div class="hero-cta-row">
+                <a href="#contact" class="hero-cta-primary">Get a Free Quote</a>
+                <a href="#projects" class="hero-cta-secondary">
+                    <span class="cta-arrow">→</span> View Services
+                </a>
+            </div>
+
+            <!-- Hero Info Cards -->
             <div class="hero-content">
                 <div class="hero-left">
+                    <div class="hero-card-icon">⚙️</div>
                     <p class="hero-target">
-                        <strong>Technical discomfort?</strong> - stay cool, the real world Troubleshooting tool does everything within a click <strong>and Runs</strong> in the <strong>background o</strong>f your system.
+                        <strong>Technical discomfort?</strong> — stay cool. Our real-world Troubleshooting tools do everything within a click <strong>and runs</strong> quietly in the <strong>background</strong> of your system.
                     </p>
                 </div>
                 <div class="hero-right">
+                    <div class="hero-card-icon">🚀</div>
                     <h2 class="hero-heading">what are we building</h2>
                     <p class="hero-description">
-                        your Technology partner with Operating system support as a service.
+                        Your Technology partner with Operating System support as a service — fast, reliable, and always on.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- ===================== AI SECTION ===================== -->
     <section class="ai-section">
         <div class="container">
             <div class="ai-content">
@@ -102,12 +123,14 @@
         </div>
     </section>
 
+    <!-- ===================== STRATEGY CALL ===================== -->
     <section class="veda-section">
         <div class="container">
             <h2 class="veda-heading">book a strategy call</h2>
         </div>
     </section>
 
+    <!-- ===================== ABOUT ===================== -->
     <section id="about" class="about">
         <div class="container">
             <h2 class="section-title">About Me</h2>
@@ -127,58 +150,61 @@
         </div>
     </section>
 
+    <!-- ===================== PROJECTS / SERVICES ===================== -->
     <section id="projects" class="projects">
         <div class="container">
             <h2 class="section-title">Working Branches</h2>
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">
-                        <div class="placeholder-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                        <img src="images/ai_automation.jpg" alt="AI & Automations" class="project-card-img">
                     </div>
                     <div class="project-content">
-                        <h3>AI & Automations</h3>
-                        <p>workflow automation, AI integration and Agents for you Business and Social media</p>
+                        <h3>AI &amp; Automations</h3>
+                        <p>Workflow automation, AI integration and Agents for your Business and Social media — all on autopilot.</p>
                         <div class="project-tags">
                             <span class="tag">Integration</span>
                             <span class="tag">Workflow Automation</span>
                             <span class="tag">Agents</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link">View more</a>
+                            <a href="#" class="project-link">View more →</a>
                         </div>
                     </div>
                 </div>
+
                 <div class="project-card">
                     <div class="project-image">
-                        <div class="placeholder-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                        <img src="images/content_factory.jpg" alt="Content Factory" class="project-card-img">
                     </div>
                     <div class="project-content">
                         <h3>Content Factory</h3>
-                        <p>Project description goes here. This is a brief overview of what the project does and the technologies used.</p>
+                        <p>Done-for-you content creation pipelines that scale your brand voice across every platform automatically.</p>
                         <div class="project-tags">
-                            <span class="tag">Vue.js</span>
-                            <span class="tag">Firebase</span>
-                            <span class="tag">CSS</span>
+                            <span class="tag">Content</span>
+                            <span class="tag">Social Media</span>
+                            <span class="tag">Scale</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link">View more</a>
+                            <a href="#" class="project-link">View more →</a>
                         </div>
                     </div>
                 </div>
+
                 <div class="project-card">
                     <div class="project-image">
-                        <div class="placeholder-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                        <img src="images/micro_saas.jpg" alt="Micro SaaS" class="project-card-img">
                     </div>
                     <div class="project-content">
-                        <h3>micro SaaS</h3>
-                        <p>Chatbots, Customer support agents and customised software for your business.</p>
+                        <h3>Micro SaaS</h3>
+                        <p>Chatbots, Customer support agents and customised software tailored to your business workflows.</p>
                         <div class="project-tags">
                             <span class="tag">Next.js</span>
                             <span class="tag">TypeScript</span>
-                            <span class="tag">Tailwind</span>
+                            <span class="tag">SaaS</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link">View more</a>
+                            <a href="#" class="project-link">View more →</a>
                         </div>
                     </div>
                 </div>
@@ -186,6 +212,7 @@
         </div>
     </section>
 
+    <!-- ===================== SKILLS ===================== -->
     <section id="skills" class="skills">
         <div class="container">
             <h2 class="section-title">Skills</h2>
@@ -212,7 +239,7 @@
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>Tools & Others</h3>
+                    <h3>Tools &amp; Others</h3>
                     <div class="skill-items">
                         <span class="skill-item">Git</span>
                         <span class="skill-item">Docker</span>
@@ -225,6 +252,7 @@
         </div>
     </section>
 
+    <!-- ===================== CONTACT ===================== -->
     <section id="contact" class="contact">
         <div class="container">
             <h2 class="section-title">Get In Touch</h2>
@@ -243,43 +271,22 @@
                             <a href="#" class="social-link">GitHub</a>
                             <a href="#" class="social-link">LinkedIn</a>
                             <a href="#" class="social-link">Twitter</a>
+                            <a href="#" class="social-link">Profile</a>
                         </div>
                     </div>
                 </div>
 
                <form class="contact-form" id="sheetmonkey-form">
                     <div class="form-group">
-                        <input 
-                            type="text" 
-                            id="name" 
-                            name="Name" 
-                            placeholder="Your Name" 
-                            required
-                        >
+                        <input type="text" id="name" name="Name" placeholder="Your Name" required>
                     </div>
                     <div class="form-group">
-                        <input 
-                            type="email" 
-                            id="email" 
-                            name="Email" 
-                            placeholder="Your Email" 
-                            required
-                        >
+                        <input type="email" id="email" name="Email" placeholder="Your Email" required>
                     </div>
                     <div class="form-group">
-                        <textarea 
-                            id="message" 
-                            name="Message" 
-                            placeholder="Your Message" 
-                            rows="5" 
-                            required
-                        ></textarea>
+                        <textarea id="message" name="Message" placeholder="Your Message" rows="5" required></textarea>
                     </div>
-                    <button type="submit" class="btn-primary" id="submit-btn">
-                        Send Message
-                    </button>
-                    
-                    <!-- Success/Error Messages -->
+                    <button type="submit" class="btn-primary" id="submit-btn">Send Message</button>
                     <div id="form-message" class="form-message" style="display: none;"></div>
                 </form>
             </div>
@@ -288,25 +295,55 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Vinesh. All rights reserved.</p>
+            <p>&copy; 2025 Triplepower. All rights reserved.</p>
             <p class="footer-note">Built with passion and attention to detail</p>
         </div>
     </footer>
-            </div>
-        </div>
-        
-    </button>
 
     <script src="script.js"></script>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        // ===== Navbar Dropdown Toggle =====
+        document.addEventListener('DOMContentLoaded', function () {
+            const dropdownBtn = document.getElementById('navDropdownBtn');
+            const dropdown = document.getElementById('navDropdown');
+
+            if (dropdownBtn && dropdown) {
+                dropdownBtn.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                    const isOpen = dropdown.classList.toggle('open');
+                    dropdownBtn.classList.toggle('active', isOpen);
+                    dropdownBtn.setAttribute('aria-expanded', isOpen);
+                });
+
+                // Close dropdown when clicking a link
+                dropdown.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        dropdown.classList.remove('open');
+                        dropdownBtn.classList.remove('active');
+                        dropdownBtn.setAttribute('aria-expanded', 'false');
+                    });
+                });
+
+                // Close dropdown when clicking outside
+                document.addEventListener('click', function (e) {
+                    if (!dropdown.contains(e.target) && !dropdownBtn.contains(e.target)) {
+                        dropdown.classList.remove('open');
+                        dropdownBtn.classList.remove('active');
+                        dropdownBtn.setAttribute('aria-expanded', 'false');
+                    }
+                });
+            }
+        });
+
+        // ===== Contact Form =====
+        document.addEventListener('DOMContentLoaded', function () {
             const form = document.getElementById('sheetmonkey-form');
             const submitBtn = document.getElementById('submit-btn');
             const messageDiv = document.getElementById('form-message');
             if (!form || !submitBtn || !messageDiv) return;
 
-            form.addEventListener('submit', async function(e) {
+            form.addEventListener('submit', async function (e) {
                 e.preventDefault();
                 submitBtn.textContent = 'Sending...';
                 submitBtn.disabled = true;
@@ -319,11 +356,9 @@
                         body: formData,
                         mode: 'no-cors'
                     });
-
                     showMessage("Thank you! Your message has been sent successfully. I'll get back to you soon!", 'success');
                     form.reset();
                 } catch (error) {
-                    console.error('Form submission error:', error);
                     showMessage('Oops! Something went wrong. Please try again or email me directly.', 'error');
                 } finally {
                     submitBtn.textContent = 'Send Message';
@@ -335,54 +370,11 @@
                 messageDiv.textContent = text;
                 messageDiv.className = `form-message ${type}`;
                 messageDiv.style.display = 'block';
-
                 if (type === 'success') {
-                    setTimeout(() => {
-                        messageDiv.style.display = 'none';
-                    }, 5000);
+                    setTimeout(() => { messageDiv.style.display = 'none'; }, 5000);
                 }
             }
         });
     </script>
-
-    <style>
-        .form-message {
-            margin-top: 1rem;
-            padding: 12px 16px;
-            border-radius: 8px;
-            font-weight: 500;
-            text-align: center;
-        }
-        .form-message.success {
-            background-color: #dcfce7;
-            color: #166534;
-            border: 1px solid #bbf7d0;
-        }
-        .form-message.error {
-            background-color: #fef2f2;
-            color: #dc2626;
-            border: 1px solid #fecaca;
-        }
-
-        .contact-form input[name="Name"],
-        .contact-form input[name="Email"],
-        .contact-form textarea[name="Message"] {
-            width: 100%;
-            padding: 12px 16px;
-            border: 2px solid #e5e7eb;
-            border-radius: 8px;
-            font-size: 16px;
-            transition: border-color 0.2s, box-shadow 0.2s;
-            box-sizing: border-box;
-        }
-
-        .contact-form input[name="Name"]:focus,
-        .contact-form input[name="Email"]:focus,
-        .contact-form textarea[name="Message"]:focus {
-            outline: none;
-            border-color: #3b82f6;
-            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
-        }
-    </style>
 </body>
 </html>
